@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SYN-OS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+<body>
+  
+    <video autoplay muted loop id="videoBackground">
+    <source src="./futurista.mp4" type="video/mp4">
+     </video>
+
+<div id="particles-js"></div>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<!--***************** BARRA DE MENU Y DESPEGSBLE *******************************************-->
+<!-- BARRA DE TAREAS -->
+<div class="taskbar">
+  <div class="taskbar-logo" onclick="toggleStartMenu()">
+    <img src="../ico/logo.png" alt="Logo" class="logo-img">
+  </div>
+
+  <div class="taskbar-icons">
+    <a href="https://www.nvidia.com/en-us/" target="_blank" rel="noopener noreferrer">
+      <img src="https://img.icons8.com/ios-filled/24/ffffff/nvidia.png" alt="Nvidia" class="taskbar-icon" />
+    </a>
+    <a href="https://skynisysia.blogspot.com/" target="_blank" rel="noopener noreferrer">
+      <img src="https://img.icons8.com/ios-filled/24/ffffff/artificial-intelligence.png" alt="artificial-intelligence" class="taskbar-icon" />
+    </a>
+    <a href="https://www.speedtest.net/es" target="_blank" rel="noopener noreferrer">
+      <img src="https://img.icons8.com/ios-filled/24/ffffff/wifi.png" alt="WiFi" class="taskbar-icon" />
+    </a>
+    <a href="https://weblink-f7e51.web.app/" target="_blank" rel="noopener noreferrer">
+      <img src="https://img.icons8.com/ios-filled/24/ffffff/speaker.png" alt="Volumen" class="taskbar-icon" />
+    </a>
+    <div id="live-clock" class="live-clock"></div>
+  </div>
+</div>
+
+<!-- MENÚ ESTILO WIN11 -->
+<div id="start-menu" class="start-menu">
+  <input type="text" placeholder="Buscar..." class="start-search">
+
+  <div class="start-section">
+    <h3>Anclado</h3>
+    <div class="start-apps">
+<div class="app-icon">
+  <a href="https://photoshop.adobe.com/id?fid=1&promoid=6NCS6ZLJ&mv=other" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/24/10EBE3/adobe-photoshop.png" alt="PC Icon" />
+  </a>
+</div>
+
+<div class="app-icon">
+  <a href="https://www.adobe.com/products/premiere.html" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/24/10EBE3/adobe-premiere-pro.png" alt="Web Icon" />
+  </a>
+</div>
+
+<div class="app-icon">
+  <a href="https://www.instagram.com" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/24/10EBE3/instagram.png" alt="Folder Icon" />
+  </a>
+</div>
+
+<div class="app-icon">
+  <a href="https://discord.com" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/24/10EBE3/discord.png" alt="PC Icon" />
+  </a>
+</div>
+
+<div class="app-icon">
+  <a href="https://facebook.com" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/24/10EBE3/facebook.png" alt="Web Icon" />
+  </a>
+</div>
+
+<div class="app-icon">
+  <a href="https://chatgpt.com/" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/24/10EBE3/chatgpt.png" alt="Folder Icon" />
+  </a>
+</div>
+</div>
+</div>
+
+<div class="start-section">
+  <h3>Recomendado</h3>
+  <div class="start-apps">
+
+    <div class="app-icon">
+      <a href="https://www.midjourney.com/explore?tab=top" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/24/10EBE3/midjourney.png" alt="PC Icon" />
+      </a>
+    </div>
+
+    <div class="app-icon">
+      <a href="https://firefly.adobe.com/?media=featured" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/24/10EBE3/adobe-firefly.png" alt="Web Icon" />
+      </a>
+    </div>
+
+    <div class="app-icon">
+      <a href="https://github.com/Gnirvin" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/24/10EBE3/github.png" alt="Folder Icon" />
+      </a>
+    </div>
+
+    <div class="app-icon">
+      <a href="https://gemini.google.com" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/24/10EBE3/gemini-ai.png" alt="PC Icon" />
+      </a>
+    </div>
+
+    <div class="app-icon">
+      <a href="https://coinmarketcap.com" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/24/10EBE3/coins.png" alt="Web Icon" />
+      </a>
+    </div>
+
+    <div class="app-icon">
+      <a href="https://vscode.dev/?vscode-lang=es" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/24/10EBE3/visual-studio.png" alt="Folder Icon" />
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+  <div class="start-footer">
+    <div class="user-info">
+      <img src="../ico/user.png" alt="User" class="user-pic">
+      <span class="user-name">SYN-OS</span>
+    </div>
+    <div class="power-dropdown">
+      <button onclick="togglePowerMenu()">⏻</button>
+      <div id="power-menu" class="power-menu">
+      <div class="power-option" onclick="location.href='reiniciar.html'">⟲ Reiniciar</div>
+      <div class="power-option" onclick="location.href='bloqueo.html'">☽ Suspender</div>
+      <div class="power-option" onclick="location.href='apagar.html'">⏻ Apagar</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--**********************************************************************************-->
+
+<div class="desktop-icons">
+  <div class="desktop-icon" onclick="openMusic()">
+    <img src="https://img.icons8.com/ios-filled/100/00ffff/musical-notes.png" alt="Música" />
+    <span>Música</span>
+  </div>
+  <div class="desktop-icon" onclick="openMyPC()">
+    <img src="https://img.icons8.com/ios-filled/100/00ffff/monitor.png" alt="Mi PC" />
+    <span>Mi PC</span>
+  </div>
+  <div class="desktop-icon" onclick="openTerminal()">
+    <img src="https://img.icons8.com/ios-filled/100/00ffff/console.png" alt="Terminal" />
+    <span>Terminal</span>
+  </div>
+  <div class="desktop-icon" onclick="openNotes()">
+    <img src="https://img.icons8.com/ios-filled/100/00ffff/goodnotes.png" alt="Notas" />
+    <span>Notas</span>
+  </div>
+  <div class="desktop-icon" onclick="openBrowser()">
+    <img src="https://img.icons8.com/ios-filled/100/00ffff/internet.png" alt="Navegador" />
+    <span>Navegador</span>
+  </div>
+<div class="desktop-icon" onclick="openFolderWindow()">
+  <img src="https://img.icons8.com/ios-filled/100/00ffff/user-folder.png" alt="Carpeta" />
+  <span>Carpeta</span>
+</div>
+</div>
+<!--***********************************************************************************-->
+<!-- Ventana Reproductor de Música -->
+<div class="window" id="musicWindow" style="display:none;">
+  <div class="window-header" onmousedown="startDrag(event, this.parentElement)">
+    <span class="window-title">🎵 Reproductor de Música</span>
+    <div class="window-controls">
+      <button onclick="minimizeWindow('musicWindow')">–</button>
+      <button onclick="maximizeWindow('musicWindow')">□</button>
+      <button onclick="closeWindow('musicWindow')">×</button>
+    </div>
+  </div>
+  <div class="window-content music-player">
+    <audio id="audioPlayer" controls></audio>
+    <ul id="musicList"></ul>
+  </div>
+</div>
+
+<!-- Ventana Mi PC -->
+<div class="window" id="mypcWindow" style="display:none;">
+  <div class="window-header" onmousedown="startDrag(event, this.parentElement)">
+    <span class="window-title">💻 Mi PC</span>
+    <div class="window-controls">
+      <button onclick="minimizeWindow('mypcWindow')">–</button>
+      <button onclick="maximizeWindow('mypcWindow')">□</button>
+      <button onclick="closeWindow('mypcWindow')">×</button>
+    </div>
+  </div>
+  <div class="mypc-content">
+    <div class="drive">
+      <div class="drive-icon">🖴</div>
+      <div class="drive-info">
+        <div class="drive-label">Disco Local (C:)</div>
+        <div class="drive-bar">
+          <div class="drive-used" style="width: 80%;"></div>
+        </div>
+        <div class="drive-space">400 GB disponibles de 500 GB</div>
+      </div>
+    </div>
+    <div class="drive">
+      <div class="drive-icon">🖴</div>
+      <div class="drive-info">
+        <div class="drive-label">Disco Local (D:)</div>
+        <div class="drive-bar">
+          <div class="drive-used" style="width: 60%;"></div>
+        </div>
+        <div class="drive-space">300 GB disponibles de 500 GB</div>
+      </div>
+    </div>
+    <div class="drive">
+      <div class="drive-icon">🖴</div>
+      <div class="drive-info">
+        <div class="drive-label">Disco Local (E:)</div>
+        <div class="drive-bar">
+          <div class="drive-used" style="width: 45%;"></div>
+        </div>
+        <div class="drive-space">225 GB disponibles de 500 GB</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ventana Terminal -->
+<div class="window" id="terminalWindow" style="display:none;">
+  <div class="window-header" onmousedown="startDrag(event, this.parentElement)">
+    <span class="window-title">🖥️ Terminal</span>
+    <div class="window-controls">
+      <button onclick="minimizeWindow('terminalWindow')">–</button>
+      <button onclick="maximizeWindow('terminalWindow')">□</button>
+      <button onclick="closeWindow('terminalWindow')">×</button>
+    </div>
+  </div>
+  <div class="window-content terminal-content">
+    <div id="terminalOutput" class="terminal-output"></div>
+    <input type="text" id="terminalInput" class="terminal-input" placeholder="Escribe un comando..." onkeydown="handleTerminal(event)" />
+  </div>
+</div>
+
+<!-- Ventana Bloc de Notas -->
+<div class="window" id="notesWindow" style="display:none;">
+  <div class="window-header" onmousedown="startDrag(event, this.parentElement)">
+    <span class="window-title">📝 Bloc de Notas</span>
+    <div class="window-controls">
+      <button onclick="minimizeWindow('notesWindow')">–</button>
+      <button onclick="maximizeWindow('notesWindow')">□</button>
+      <button onclick="closeWindow('notesWindow')">×</button>
+    </div>
+  </div>
+  <div class="window-content notes-content">
+    <textarea id="notesArea" placeholder="Escribe tus notas aquí..."></textarea>
+    <button onclick="saveNotes()">💾 Guardar</button>
+  </div>
+</div>
+
+<!-- Ventana Navegador Web -->
+<div class="window" id="browserWindow" style="display:none;">
+  <div class="window-header" onmousedown="startDrag(event, this.parentElement)">
+    <span class="window-title">🌐 Navegador</span>
+    <div class="window-controls">
+      <button onclick="minimizeWindow('browserWindow')">–</button>
+      <button onclick="maximizeWindow('browserWindow')">□</button>
+      <button onclick="closeWindow('browserWindow')">×</button>
+    </div>
+  </div>
+  <div class="window-body browser-content">
+    <div class="browser-bar">
+      <input type="text" id="browserInput" />
+      <button onclick="loadPage()">Ir</button>
+    </div>
+    <iframe id="browserFrame" src="https://www.google.com/webhp?igu=1"></iframe>
+  </div>
+</div>
+
+<!-- Ventana  de carpetas -->
+<div class="window" id="folderWindow" style="display:none;">
+  <div class="window-header" onmousedown="startDrag(event, this.parentElement)">
+    <span class="window-title">📁 Carpeta</span>
+    <div class="window-controls">
+      <button onclick="minimizeWindow('folderWindow')">–</button>
+      <button onclick="maximizeWindow('folderWindow')">□</button>
+      <button onclick="closeWindow('folderWindow')">×</button>
+    </div>
+  </div>
+  <div class="window-content">
+    <div id="folderContent" class="folder-grid">
+    </div>
+  </div>
+</div>
+
+<!--***********************************************************************************-->
+  <script src="script.js"></script>
+</body>
+</html>

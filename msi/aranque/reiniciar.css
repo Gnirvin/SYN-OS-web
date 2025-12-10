@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: cyan;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boot-screen {
+  text-align: center;
+}
+
+.logo {
+  font-size: 3rem;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
+  margin-bottom: 40px;
+  font-weight: bold;
+  animation: pulseLogo 2s infinite;
+}
+
+@keyframes pulseLogo {
+  0%, 100% {
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
+  }
+  50% {
+    text-shadow: 0 0 20px #0ff, 0 0 30px #00ffff, 0 0 60px #00ffff;
+  }
+}
+
+.loading-ring {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.loading-ring span {
+  width: 12px;
+  height: 12px;
+  background-color: #00ffff;
+  border-radius: 50%;
+  animation: bounce 1s infinite;
+}
+
+.loading-ring span:nth-child(1) { animation-delay: 0s; }
+.loading-ring span:nth-child(2) { animation-delay: 0.1s; }
+.loading-ring span:nth-child(3) { animation-delay: 0.2s; }
+.loading-ring span:nth-child(4) { animation-delay: 0.3s; }
+.loading-ring span:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); opacity: 0.6; }
+  50% { transform: translateY(-10px); opacity: 1; }
+}
+
+.boot-text {
+  font-size: 1rem;
+  color: #00ffffcc;
+  font-style: italic;
+}
