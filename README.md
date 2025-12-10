@@ -1,3 +1,7 @@
+[![HTML](https://img.shields.io/badge/HTML-5-orange.svg)]()
+[![CSS](https://img.shields.io/badge/CSS-3-blue.svg)]()
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow.svg)]()
+
 # SYN Web OS Futurista Estilo Tron / ECOM
 
 Bienvenido a **Web OS Futurista**, un sistema operativo simulado construido completamente en la web, con diseño neón estilo Tron/ECOM y efectos modernos tipo Windows 11. Este proyecto recrea un entorno de escritorio funcional con ventanas, aplicaciones internas y animaciones avanzadas.
