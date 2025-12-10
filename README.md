@@ -37,7 +37,11 @@ Bienvenido a **Web OS Futurista**, un sistema operativo simulado construido comp
 * Sombreados neon dinámicos.
 * Scrollbars personalizadas.
 * Interfaz cristalina con borde luminoso.
-
+* 
+### 🔴 Dato importante---
+ el fondo de pantalla no se pudo subir lo cual no les muestra ya que es video en 4K
+ mi recomendacion es que descarges un video y lo pongas en OS\msi\aranque con el nombre futurista.mp4
+o simple mente si no quieres usar video como fondo de pantalla pedes editar el codigo.
 ---
 ## 🧩 Personalización
 
