@@ -1,0 +1,61 @@
+# Web OS Futurista Estilo Tron / ECOM
+
+Bienvenido a **Web OS Futurista**, un sistema operativo simulado construido completamente en la web, con diseño neón estilo Tron/ECOM y efectos modernos tipo Windows 11. Este proyecto recrea un entorno de escritorio funcional con ventanas, aplicaciones internas y animaciones avanzadas.
+
+## 🚀 Características principales
+
+### 🖥️ Escritorio estilo Windows 11 + Tron
+
+* Barra inferior translúcida con efecto glass.
+* Íconos de escritorio interactivos.
+* Sistema modular para agregar nuevas apps.
+
+### 🪟 Sistema de ventanas avanzado
+
+* Mover, minimizar, maximizar y cerrar.
+* Enfoque automático (bringToFront()).
+* Ajuste a esquinas estilo Windows.
+* Ventanas completamente flotantes.
+
+### 🗂️ Aplicaciones incluidas
+
+* **Carpeta tradicional** con subcarpetas internas (Imágenes, Videos, etc.).
+* **Mi PC** con discos locales organizados horizontalmente.
+* **Terminal** interactiva.
+* **Notas**.
+* **Reproductor de música** con lista integrada.
+* **Configuración** estilo Windows 11 con info del sistema.
+
+### 🎨 Estilo visual
+
+* Neón/Tron azul y cian.
+* Sombreados neon dinámicos.
+* Scrollbars personalizadas.
+* Interfaz cristalina con borde luminoso.
+
+---
+## 🧩 Personalización
+
+* Los estilos se pueden modificar en `css/`.
+* Las apps se agregan en `js/apps/`.
+* Puedes cambiar íconos y música en `assets/`.
+
+---
+
+## 🛡️ Estado del Proyecto
+
+Este proyecto es **100% educativo y visual**. No realiza funciones reales como antivirus, seguridad o administración del sistema.
+
+---
+
+## 📜 Licencia
+
+Licencia MIT – Uso libre con créditos.
+
+---
+
+## ❤️ Créditos
+
+Proyecto creado por **Skynisys**.
+
+---
